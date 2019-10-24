@@ -1,0 +1,83 @@
+Started by timer
+[Thu Oct 24 20:00:57 UTC 2019] Starting organization scan...
+[Thu Oct 24 20:00:57 UTC 2019] Updating actions...
+Looking up details of Test...
+Organization URL: [8mha:////4CAKnmLX9PdUzogA2IedJxJZAENLzc+4j9AXr9avoJ51AAAAlx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQL2EQzygpKSi20tdPzyzJKE0C6srVL0ktLgEAcJ8aQJwAAAA=[0mhttps://github.com/test
+[Thu Oct 24 20:00:58 UTC 2019] Consulting GitHub Organization
+[8mha:////4Jq+W87Us8s2NLcYdYqBatrNYlbs1UGpRdyfPFGYkBV5AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTu/+iFSwEcjcXvjgAAAA==[0mConnecting to https://api.github.com using thomas-rice/******
+Looking up repositories of user Test
+
+Proposing HelloWorld
+Examining [8mha:////4JhmlQy//XowaLptp32Z9IaWNn1s5t+5x6FzvR+HPuvHAAAAoh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2FQyigpKSi20tdPzyzJKE0C6srVL0ktLtH3SM3JyQ/PL8pJAQArpDahpwAAAA==[0mTest/HelloWorld
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+    Checking pull request [8mha:////4CtMFfohrpRNmVgRsTXy+QEZa0SAwBd7Fv2TcN/jMfzgAAAAqR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmHQzCgpKSi20tdPzyzJKE0C6srVL0ktLtH3SM3JyQ/PL8pJ0S8ozcnRNwIAY4flja4AAAA=[0m#2
+ERROR: Failed to create or update a subproject HelloWorld
+java.lang.NullPointerException
+	at org.jenkinsci.plugins.github_branch_source.PullRequestSCMHead.<init>(PullRequestSCMHead.java:95)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrievePullRequest(GitHubSCMSource.java:1168)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieve(GitHubSCMSource.java:1027)
+	at jenkins.scm.api.SCMSource._retrieve(SCMSource.java:373)
+	at jenkins.scm.api.SCMSource.fetch(SCMSource.java:327)
+	at jenkins.branch.MultiBranchProjectFactory$BySCMSourceCriteria.recognizes(MultiBranchProjectFactory.java:263)
+	at jenkins.branch.OrganizationFolder$SCMSourceObserverImpl$1.recognizes(OrganizationFolder.java:1405)
+	at jenkins.branch.OrganizationFolder$SCMSourceObserverImpl$1.complete(OrganizationFolder.java:1420)
+	at jenkins.scm.api.trait.SCMNavigatorRequest.process(SCMNavigatorRequest.java:254)
+	at jenkins.scm.api.trait.SCMNavigatorRequest.process(SCMNavigatorRequest.java:204)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMNavigator.visitSources(GitHubSCMNavigator.java:1012)
+	at jenkins.branch.OrganizationFolder.computeChildren(OrganizationFolder.java:488)
+	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:277)
+	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:164)
+	at jenkins.branch.OrganizationFolder$OrganizationScan.run(OrganizationFolder.java:969)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Proposing rokehan
+Examining [8mha:////4MN0NSHjIVOIfj69qgYg1FGWyVuq761faxEmtsgaYU/yAAAAnx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgKWGQzygpKSi20tdPzyzJKE0C6srVL0ktLtEvys9OzUjMAwCgHwUXpAAAAA==[0mTest/rokehan
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining Test/rokehan
+
+Proposing SDWebImage
+Examining [8mha:////4LDmDDw1FEYgWfGt08wnwxCgLiS21CdHTbDXNhUtxLwyAAAAoh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2FQyigpKSi20tdPzyzJKE0C6srVL0ktLtEPdglPTfLMTUxPBQDuRBnlpwAAAA==[0mTest/SDWebImage
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining Test/SDWebImage
+
+Proposing sNews
+Examining [8mha:////4JIAxYoDMIAqhwOZymEh+hcP/jLcj6u9NAvUe+ASQ3OcAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgKmGQzSgpKSi20tdPzyzJKE0C6srVL0ktLtEv9kstLwYAU2sEaqIAAAA=[0mTest/sNews
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining Test/sNews
+
+Proposing Test--01
+Examining [8mha:////4HUN/HuuGhqXx9hOMvYBJ+XW9tz1qNW/ekaTI+ugnEpTAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLWFQyCgpKSi20tdPzyzJKE0C6srVL0ktLtEPARK6ugaGAGhKZ0WlAAAA[0mTest/Test--01
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining Test/Test--01
+
+[8mha:////4Mxcf2V5UOGLlWWCyPKtK1usNYmQqM1QB0GvkT94lpx7AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTu/+jV5gD+lysLjgAAAA==[0m5 repositories were processed
+[Thu Oct 24 20:01:00 UTC 2019] Finished organization scan. Scan took 2.7 sec
+Finished: SUCCESS
